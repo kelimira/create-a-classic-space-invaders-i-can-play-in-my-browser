@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'">
+<title>Space Invaders</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="game" width="224" height="256" aria-label="Space Invaders game"></canvas>
+<div id="touch">
+  <button data-key="left" aria-label="Move left">&larr;</button>
+  <button data-key="fire" aria-label="Fire">FIRE</button>
+  <button data-key="right" aria-label="Move right">&rarr;</button>
+</div>
+<p id="help">&larr; &rarr; / A D move &middot; Space fire &middot; Enter start</p>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
